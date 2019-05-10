@@ -1,0 +1,4 @@
+vendor/ 
+composer.lock
+.sass-cache/
+style.css.map

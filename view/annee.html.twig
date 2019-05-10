@@ -1,0 +1,17 @@
+{% extends 'index.html.twig' %}
+
+
+ 
+ {% block content %}
+
+    {% for annee in annees %}
+        <section class="contenu_annee">
+            <div>
+                <a href="films/annee/{{annee.annee}}"><h1 class="text-center">{{annee.annee}}</h1></a>
+                
+            </div>
+        </section>
+
+    {% endfor %}
+ 
+ {% endblock %}

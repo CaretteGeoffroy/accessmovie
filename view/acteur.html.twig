@@ -1,0 +1,19 @@
+
+ {% extends 'index.html.twig' %} 
+ 
+ {% block content_real_acteur  %}
+
+    {% for acteur in acteurs|sort %}
+    <section class="contenu_acteur">
+        <div>
+            <a href="films/acteur/{{acteur.id}}"><h1 class="text-center">{{acteur.acteur}}</h1></a>
+                 <a href="films/acteur/{{acteur.id}}"><div class="image col-12" style="background: url({{acteur.image_acteur}}); background-size: cover;
+                    background-position: center;
+                    height: 400px; margin:0;">
+            </div></a>
+        </div>
+    </section>
+
+    {% endfor %}
+ 
+ {% endblock %}
